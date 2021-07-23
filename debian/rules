@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+
+export QT_SELECT=qt5
+# cf. https://github.com/MaartenBaert/ssr/issues/498
+export DEB_CXXFLAGS_MAINT_APPEND := -fPIC
+
+%:
+	dh $@
+
+# * glinjectlib is disabled on non-x86 systems as it requires the
+#   x86-only elfhacks code (see README.source)
+
+override_dh_auto_configure:
+ifneq ($(filter $(DEB_HOST_ARCH_CPU), amd64 i386),)
+	dh_auto_configure -- \
+		-DCMAKE_INSTALL_LIBDIR=/usr/lib/simplescreenrecorder \
+		-DWITH_QT5=TRUE
+else
+	dh_auto_configure -- \
+		-DENABLE_X86_ASM=FALSE \
+		-DWITH_GLINJECT=FALSE \
+		-DWITH_QT5=TRUE
+endif
+
+override_dh_installdocs:
+	dh_installdocs -A AUTHORS.md notes.txt README.md todo.txt
+
+override_dh_installchangelogs:
+	dh_installchangelogs -A CHANGELOG.md

@@ -1,0 +1,10 @@
+simplescreenrecorder (0.4.4-hamonikr1) focal; urgency=medium
+
+  * Release for HamoniKR 4.0 Jin
+   - New upstream version 0.4.4
+   - Add Korean translation
+   - Update desktop file for Korean
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 23 Jul 2021 14:39:31 +0900
+
+

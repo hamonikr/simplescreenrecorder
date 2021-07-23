@@ -1,0 +1,76 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: simplescreenrecorder
+Source: http://www.maartenbaert.be/simplescreenrecorder
+
+Files: *
+Copyright: 2012-2016 Maarten Baert <maarten-baert@hotmail.com>
+License: GPL-3+
+
+Files:
+ glinject/elfhacks.c
+ glinject/elfhacks.h
+Copyright: 2007-2008 Pyry Haulos <pyry.haulos@gmail.com>
+License: Zlib
+ This software is provided 'as-is', without any express or implied warranty.
+ In no event will the authors be held liable for any damages arising from the
+ use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it freely,
+ subject to the following restrictions:
+ 1. The origin of this software must not be misrepresented; you must not
+    claim that you wrote the original software. If you use this software
+    in a product, an acknowledgment in the product documentation would be
+    appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.
+
+Files:
+ glinject/Hook.cpp
+ glinject/GLInject.cpp
+ glinject/ShmStructs.h
+ glinject/SSRVideoStreamWriter.cpp
+ glinject/GLXFrameGrabber.cpp
+ glinject/GLInject.h
+ glinject/Global.h
+ glinject/GLXFrameGrabber.h
+ glinject/SSRVideoStreamWriter.h
+Copyright: 2012-2014 Maarten Baert <maarten-baert@hotmail.com>
+License: ISC
+ Permission to use, copy, modify, and/or distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+ REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+ INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
+
+Files: debian/*
+Copyright:
+ 2015-2016 Olivier Humbert <trebmuh@tuxfamily.org>
+ 2015 John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
+ 2014 Jof Thibaut <tangostudio@tuxfamily.org>
+ 2012-2013 Maarten Baert <maarten-baert@hotmail.com>
+License: GPL-3+
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+Comment:
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".

@@ -1,0 +1,3 @@
+version=3
+https://github.com/MaartenBaert/ssr/tags .*/v?(\d.*)\.(?:tgz|tbz2|tar\.(?:gz|bz2|xz))
+
